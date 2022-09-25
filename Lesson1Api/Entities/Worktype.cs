@@ -18,6 +18,9 @@ namespace Lesson1Api.Entities
 
         public virtual ICollection<Workrequest> Workrequests { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual ICollection<Employee> Employees { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Text.Json.Serialization;
 using Lesson1Api.Data;
 
@@ -25,6 +25,7 @@ builder.Services.AddDbContext<WorksTokContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// Конфигурация промежуточных слоев
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
