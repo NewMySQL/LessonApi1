@@ -87,5 +87,19 @@ namespace Lesson1Api.Controllers
 
             return Ok(workrequests);
         }
+
+        [HttpGet]
+        public IActionResult Schedules()
+        {
+            var workrequests = DB.Schedules
+                .Select(x => new
+                {
+                    x.Id,
+                    x.DayOfWeek
+                })
+                .ToList();
+
+            return Ok(workrequests);
+        }
     }
 }
